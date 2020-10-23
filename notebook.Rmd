@@ -1,0 +1,44 @@
+---
+title: "Covid Cases Review"
+output: html_notebook
+---
+
+
+```{r Initial, echo=FALSE, message=FALSE, warning=FALSE}
+source("../R_Covid/final_graphs.r")
+```
+
+## CEE Countries
+
+**CEE countries**. CEE countries. The region displays strong increase of new reported cases, which is particularly visible in Croatia, Czech Republic, Germany, Poland, Romania, Russia, Slovakia. The trend is very clear and continues.
+
+```{r CEE Countries, echo=FALSE, fig.height=10, message=FALSE, warning=FALSE}
+g_newCases_CEE_v2
+```
+
+**Other major countries**. The key highlights are: (i) European countries shows further growth (Belgium France, Italy, Netherlands, Sweden and UK), (ii) Brazil shows steady decline in number of new patients, while (iii) US is showing further growth. In China the number of new covid cases is flat.
+
+
+```{r Other major countries, fig.height=12, message=FALSE, warning=FALSE, echo=FALSE}
+g_newCases_West_v2
+```
+**Geographical regions – growth is back with vengeance in Europe**. Aggregated data shows further pickup across Europe all over the excluding North Europe.
+
+```{r Geographical regions, fig.height=8, message=FALSE, warning=FALSE, echo=FALSE}
+g_newCases_regions
+```
+
+
+**Continents – Europe lead the growth**. Again, aggregated data shows that growth concentrates in Europe, where as much as 150,000 cases per day have appeared.
+
+
+```{r Continents, echo=FALSE, fig.height=8, message=FALSE, warning=FALSE, supressWarnings=True}
+g_newCases_continents
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
